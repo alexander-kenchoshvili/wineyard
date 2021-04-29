@@ -1,7 +1,16 @@
+.background{
+    background-color: red;
+}
+
 .head-section{
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
    
-
+  
     .header-items{
         display: flex;
         flex-wrap: wrap;
@@ -69,6 +78,7 @@
                             text-decoration: none;
                            
                         }
+                       
                         .active{
                             color: #a53e4c;
                         }

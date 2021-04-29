@@ -1,10 +1,127 @@
-.slider{
+.slider-section{
+    position: relative;
     height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 240;
- 
     
+
+    .slider-img{
+        position: relative;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .slider-bottom{
+            width: 100%;
+            height: 96px;
+            position: absolute;
+            bottom: 0;
+            z-index: 90;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    .slider-img::after{
+        content: '\A';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
     
+    }
+  
+}
+.wine-making{
+    padding-top: 50px;
+    .wine-making-items{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .wine-photo{
+            width: 600px;
+            height: 597px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .making-description{
+            width: 480px;
+            height: 597px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .making-title{
+                width: 100%;
+                height: 200px;
+                
+
+                h3{
+                    font-family: sans-serif;
+                    font-size: 24px;
+                    color: #a53e4c;
+                }
+                h2{
+                    font-family: sans-serif;
+                    font-size: 44px;
+                    color: black;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+                p{
+                    font-family: sans-serif;
+                    color: #595959;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    line-height: 1.7em;
+                }
+            }
+            .making-production{
+                width: 100%;
+                height: 400px;
+
+                .products{
+                    width: 100%;
+                    height: 75px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin: 50px 0;
+                    
+                    
+                    
+                    .product-img{
+                        width: 45px;
+                        height: 75px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                   .caption{
+                       width: 85%;
+                       height: 100%;
+                       h2{
+                           color: #282828;
+                           font-weight: 600;
+                           font-size: 20px;
+                           font-family: sans-serif;
+                       }
+                       p{
+                           margin-top: 2px;
+                           color: #595959;
+                           font-family: sans-serif;
+                           font-size: 16px;
+                           line-height: 1.7em;
+                       }
+                   }
+                }
+            }
+        }
+    }
+
 }

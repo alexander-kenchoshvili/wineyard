@@ -1,5 +1,5 @@
 
-<div class="head-section">
+<div [ngClass]="'background'" class="head-section">
     <div class="container">
         <div class="header-items">
             <div class="contact-line">
@@ -26,7 +26,7 @@
                 <div class="nav-bar">
                     <ul>
                         <li>
-                            <a [routerLink]="['']"[routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Home</a>
+                            <a (click)="add()" class="new" [routerLink]="['']"[routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Home</a>
                             <a [routerLink]="['/about']" routerLinkActive="active">About Us</a>
                             <a [routerLink]="['/services']" routerLinkActive="active">Services</a>
                             <a [routerLink]="['/price']" routerLinkActive="active">Pricing</a>

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  background = false;
+
+ 
   constructor() { }
 
   ngOnInit(): void {
   }
+  add(){
+    
+    this.background = true;
 
+  }
 }
